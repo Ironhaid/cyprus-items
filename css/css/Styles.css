@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/*--------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.button-1 {
+  background: none !important;
+  color: rgb(255, 47, 0);
+}
+
+.button-2 {
+  background-color: rgb(255, 47, 0);
+  color: #fff;
+}
+
+.button {
+  font-size: 4vw;
+  border: 2px solid rgb(255, 47, 0);
+  padding: 1.5vw 4vw;
+  border-radius: 15px;
+  margin: 2vw 1vw;
+  font-weight: bold;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.button:hover {
+  background-color: rgb(208, 3, 0) !important;
+  color: #fff;
+}
+.button:active {
+  background-color: rgb(163, 11, 9) !important;
+}
+
+.item__buttons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.item__title {
+  font-size: 4vw;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #000;
+}
+.item__title:hover {
+  color: #000;
+}
+.item__title:active {
+  color: gray;
+}
+
+.item__subtitle {
+  font-size: 3.5vw;
+  cursor: pointer;
+  color: #000;
+}
+.item__subtitle:hover {
+  color: #000;
+}
+.item__subtitle:active {
+  color: gray;
+}
+
+.item__price {
+  font-size: 6vw;
+  font-weight: bold;
+  color: rgb(255, 47, 0);
+}
+
+.item__amount {
+  font-size: 3.5vw;
+}
+
+.item__arrow svg {
+  width: 5vw;
+  height: 5vw;
+}
+
+.carousel-indicators {
+  bottom: -5vw !important;
+}
+.carousel-indicators button {
+  width: 2.5vw !important;
+  height: 2.5vw !important;
+  border-radius: 50% !important;
+}
+
+.active {
+  background-color: rgb(255, 47, 0) !important;
+}
+
+@media (min-width: 425px) {
+  .carousel-indicators {
+    bottom: 0 !important;
+  }
+}
